@@ -31,6 +31,9 @@ $black: rgba(0, 0, 0, 1);
   @media screen and (max-width: 1240px) {
     padding: 24px;
   }
+  @media screen and (max-width: 500px) {
+    padding: 14px 24px;
+  }
 }
 .main {
   width: 100vw;
@@ -61,6 +64,9 @@ $black: rgba(0, 0, 0, 1);
   @media screen and (max-width: 1240px) {
     padding: 24px;
   }
+  @media screen and (max-width: 500px) {
+    padding: 24px 24px 18px;
+  }
   .main__content__wrapper {
     width: 538px;
     height: 100%;
@@ -74,6 +80,13 @@ $black: rgba(0, 0, 0, 1);
       @include font(500, 30px, $darkBlue, 48px);
       font-family: "Manrope", sans-serif;
       margin-bottom: 18px;
+      @media screen and (max-width: 1240px) {
+        @include font(500, 20px, $darkBlue, 32px);
+      }
+      @media screen and (max-width: 500px) {
+        @include font(500, 17px, $darkBlue, 27.2px);
+        margin-bottom: 14px;
+      }
     }
     .content__text__description {
       width: 100%;
@@ -81,6 +94,9 @@ $black: rgba(0, 0, 0, 1);
       margin-bottom: 36px;
       @media screen and (max-width: 1240px) {
         @include font(400, 15px, $gray, 24px);
+      }
+      @media screen and (max-width: 500px) {
+        @include font(400, 13px, $gray, 20.8px);
       }
     }
   }
@@ -100,6 +116,9 @@ $black: rgba(0, 0, 0, 1);
   @media screen and (max-width: 1240px) {
     margin: 0;
     @include font(500, 15px, $white, 24px);
+  }
+  @media screen and (max-width: 500px) {
+    width: 279px;
   }
   .btn__ico {
     width: 36px;
@@ -135,6 +154,9 @@ $black: rgba(0, 0, 0, 1);
   .image {
     width: 100%;
     height: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    height: 220px;
   }
 }
 
