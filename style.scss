@@ -164,8 +164,8 @@ $black: rgba(0, 0, 0, 1);
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -176,6 +176,9 @@ $black: rgba(0, 0, 0, 1);
   width: 500px;
   padding: 24px;
   background-color: $lightBlue;
+  @media screen and (max-width: 580px) {
+    width: 90%;
+  }
 }
 .form__close-btn__block {
   width: 100%;

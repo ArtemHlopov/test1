@@ -227,8 +227,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -240,6 +240,11 @@
   width: 500px;
   padding: 24px;
   background-color: rgb(235, 240, 250);
+}
+@media screen and (max-width: 580px) {
+  .modal__form {
+    width: 90%;
+  }
 }
 
 .form__close-btn__block {
