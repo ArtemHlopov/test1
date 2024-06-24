@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  width: 100vw;
+  height: 455px;
+}
+.main .main__wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.main .main__wrapper .main__content {
+  width: 50%;
+}
+
+.content__text {
+  background: rgb(235, 240, 250);
+  padding: 102px 72px;
+}
+.content__text .main__content__wrapper {
+  width: 538px;
+  height: 100%;
+  padding-right: 27px;
+}
+.content__text .main__content__wrapper .content__text__title {
+  text-align: left;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(31, 66, 132);
+  line-height: 48px;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 18px;
+}
+.content__text .main__content__wrapper .content__text__description {
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: rgb(114, 114, 114);
+  line-height: 27.2px;
+  margin-bottom: 36px;
+}
+
+.content__text__btn {
+  width: 341px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 12px 12px 24px;
+  border-radius: 60px;
+  background-color: rgb(31, 66, 132);
+  color: rgb(255, 255, 255);
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  line-height: 28.8px;
+  margin-bottom: 102px;
+  cursor: pointer;
+}
+.content__text__btn .btn__ico {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.content__text__btn .btn__ico .arrow {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid rgb(31, 66, 132);
+  border-right: 2px solid rgb(31, 66, 132);
+}
+.content__text__btn .btn__ico .arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.5px;
+  height: 11.4px;
+  background-color: rgb(31, 66, 132);
+  transform: rotate(45deg);
+  left: 3.8px;
+  bottom: -1px;
+}
+
+.content__img {
+  height: 100%;
+}
+.content__img .image {
+  width: 100%;
+  height: 100%;
+}
+
+.main__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__form {
+  width: 500px;
+  padding: 24px;
+  background-color: rgb(235, 240, 250);
+}
+
+.form__close-btn__block {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4px;
+}
+.form__close-btn__block .form__close-btn {
+  position: relative;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.form__close-btn__block .form__close-btn::after, .form__close-btn__block .form__close-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  left: 18px;
+  bottom: 26px;
+}
+.form__close-btn__block .form__close-btn::after {
+  transform: rotate(45deg);
+}
+.form__close-btn__block .form__close-btn::before {
+  transform: rotate(135deg);
+}
+
+.form__title {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  color: rgb(50, 50, 50);
+  line-height: 32.78px;
+  margin-bottom: 18px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 24px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(215, 226, 246);
+  margin-bottom: 4px;
+}
+.form__input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(31, 66, 132);
+  line-height: 2424.59px;
+}
+
+.checkbox__wrapper {
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+}
+.checkbox__wrapper .checkbox__label {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  line-height: 24.59px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.form__pass-link {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(31, 66, 132);
+  line-height: 27.32px;
+  display: block;
+  margin-bottom: 36px;
+  cursor: pointer;
+}
+
+.form__btn {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  line-height: 28.8px;
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 18px 0;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#login {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 66, 132);
+}
+
+#signin {
+  color: rgb(31, 66, 132);
+  border: 1px solid rgb(31, 66, 132);
+  background-color: rgb(235, 240, 250);
+}
+
+/*# sourceMappingURL=style.css.map */
